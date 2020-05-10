@@ -16,12 +16,7 @@
 
 }
 .Hero-title {
-  color: var(--darkBlue);
-  font-size: 2.5em;
-  font-weight: 300;
-  line-height: 1.2;
-  margin: 0;
-  margin-bottom: .5em;
+  @include title;
 }
 .Hero-description {
   font-size: .9em;

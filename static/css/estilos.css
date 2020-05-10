@@ -52,10 +52,10 @@ body {
 }
 
 .Hero-title {
-  color: var(--darkBlue);
   font-size: 2.5em;
+  color: var(--darkBlue);
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.3;
   margin: 0;
   margin-bottom: 0.5em;
 }
@@ -85,8 +85,12 @@ body {
 }
 
 .Why-title {
-  color: var(--darkBlue);
   font-size: 2.5em;
+  color: var(--darkBlue);
+  font-weight: 300;
+  line-height: 1.3;
+  margin: 0;
+  margin-bottom: 0.5em;
 }
 
 .Why-description {
@@ -99,13 +103,98 @@ body {
 }
 
 .Why-item-title {
+  font-size: 2.5em;
   color: var(--darkBlue);
-  font-size: 1.8em;
+  font-weight: 300;
+  line-height: 1.3;
   margin: 0;
+  margin-bottom: 0.5em;
+  font-size: 1.8em;
 }
 
 .Why-item-description {
   margin-bottom: 2em;
+}
+
+.latestArticles {
+  padding-top: 5em;
+  background: var(--lightGrayishBlue);
+}
+.latestArticles-container {
+  padding: 1em 1.5em;
+}
+.latestArticles-grid {
+  display: grid;
+  grid-row-gap: 2em;
+}
+.latestArticles-item {
+  border-radius: 0.5em;
+  overflow: hidden;
+  background: var(--white);
+}
+.latestArticles-item-content {
+  padding: 1.8em;
+}
+.latestArticles-item-image {
+  width: 100%;
+  object-fit: cover;
+}
+.latestArticles-item-author {
+  color: var(--grayishBlue);
+  margin-bottom: 1em;
+}
+.latestArticles-item-title {
+  font-size: 2.5em;
+  color: var(--darkBlue);
+  font-weight: 300;
+  line-height: 1.3;
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-size: 1.8em;
+}
+.latestArticles-title {
+  font-size: 2.5em;
+  color: var(--darkBlue);
+  font-weight: 300;
+  line-height: 1.3;
+  margin: 0;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.Footer {
+  background: var(--darkBlue);
+  color: var(--white);
+  padding: 2em 0;
+  text-align: center;
+}
+.Footer svg {
+  display: block;
+  margin: auto;
+  margin-bottom: 2em;
+}
+.Footer-link {
+  display: block;
+  color: var(--lightGrayishBlue);
+  text-decoration: none;
+  margin-bottom: 2em;
+}
+.Footer-social {
+  display: grid;
+  grid-template-columns: repeat(5, 25px);
+  grid-column-gap: 1em;
+  justify-content: center;
+  margin: 2.5em 0;
+}
+.Footer-button {
+  padding: 1em 2em;
+  font-size: 1em;
+  border-radius: 1.5em;
+  color: var(--white);
+  background-image: linear-gradient(to right, var(--limeGreen) 0%, var(--brightCyan) 100%);
+}
+.Footer-copyright {
+  color: var(--grayishBlue);
 }
 
 /*# sourceMappingURL=estilos.css.map */

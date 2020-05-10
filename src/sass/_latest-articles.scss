@@ -1,0 +1,35 @@
+.latestArticles{
+  padding-top: 5em;
+  background: var(--lightGrayishBlue);
+  &-container {
+    padding: 1em 1.5em;
+  }
+  &-grid {
+    display: grid;
+    grid-row-gap: 2em;
+  }
+  &-item {
+    border-radius: .5em;
+    overflow: hidden;
+    background: var(--white);
+    &-content {
+      padding: 1.8em;
+    }
+    &-image {
+      width: 100%;
+      object-fit: cover;
+    }
+    &-author {
+      color: var(--grayishBlue);
+      margin-bottom: 1em;
+    }
+    &-title {
+      @include title;
+      font-size: 1.8em;
+    }
+  }
+  &-title {
+    @include title;
+    text-align: center;
+  }
+}
