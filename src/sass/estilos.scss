@@ -1,3 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap');
+
+@import 'typography';
+
+:root {
+  --darkBlue: hsl(233, 26%, 24%);
+  --limeGreen: hsl(136, 65%, 51%);
+  --brightCyan: hsl(192, 70%, 51%);
+  --grayishBlue: hsl(233, 8%, 62%);
+  --lightGrayishBlue: hsl(220, 16%, 96%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --wrapperSpace: 1.5em;
+}
+
 body {
   margin: 0;
+  color: var(--grayishBlue);
+  background: var(--white);
+  font-size: $font-size-base;
+  font-family: $font-family;
 }
+
+.is-hidden {
+  display: none !important;
+}
+
+@import 'header';
+@import 'menu';
+@import 'hero';
+@import 'why';

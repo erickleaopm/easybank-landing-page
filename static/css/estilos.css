@@ -1,5 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap");
+:root {
+  --darkBlue: hsl(233, 26%, 24%);
+  --limeGreen: hsl(136, 65%, 51%);
+  --brightCyan: hsl(192, 70%, 51%);
+  --grayishBlue: hsl(233, 8%, 62%);
+  --lightGrayishBlue: hsl(220, 16%, 96%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --wrapperSpace: 1.5em;
+}
+
 body {
-  border: 10px solid green;
+  margin: 0;
+  color: var(--grayishBlue);
+  background: var(--white);
+  font-size: 16px;
+  font-family: "Public Sans", sans-serif;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.Header-container {
+  display: flex;
+  padding: 1em 1.5em;
+  justify-content: space-between;
+}
+
+.Menu {
+  width: 40px;
+  background: url("../images/icon-hamburger.svg") no-repeat center;
+}
+
+.Hero {
+  text-align: center;
+  padding-bottom: 5em;
+}
+
+.Hero-container {
+  padding: 0 1.5em;
+}
+
+.Hero-image {
+  height: 300px;
+  background: url("../images/image-mockups.png"), url("../images/bg-intro-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center;
+  background-size: 345px, cover;
+  margin: 0 calc(-1 * var(--wrapperSpace));
+}
+
+.Hero-title {
+  color: var(--darkBlue);
+  font-size: 2.5em;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.Hero-description {
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin-bottom: 2.5em;
+}
+
+.Hero-button {
+  padding: 1em 2em;
+  font-size: 1em;
+  border-radius: 1.5em;
+  color: var(--white);
+  background-image: linear-gradient(to right, var(--limeGreen) 0%, var(--brightCyan) 100%);
+}
+
+.Why {
+  background: var(--lightGrayishBlue);
+  text-align: center;
+  padding-top: 5em;
+}
+
+.Why-container {
+  padding: 1em 1.5em;
+}
+
+.Why-title {
+  color: var(--darkBlue);
+  font-size: 2.5em;
+}
+
+.Why-description {
+  padding-bottom: 4em;
+  font-size: 1em;
+}
+
+.Why-item-image {
+  margin-bottom: 1.5em;
+}
+
+.Why-item-title {
+  color: var(--darkBlue);
+  font-size: 1.8em;
+  margin: 0;
+}
+
+.Why-item-description {
+  margin-bottom: 2em;
 }
 
 /*# sourceMappingURL=estilos.css.map */
