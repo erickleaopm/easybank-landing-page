@@ -25,13 +25,62 @@ body {
   display: none !important;
 }
 
-@mixin title{
+@mixin container {
+  padding: 0 var(--wrapperSpace);
+  max-width: calc(1115px + 1.5em );
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@mixin title {
   font-size: 2.5em;
   color: var(--darkBlue);
   font-weight: 300;
   line-height: 1.3;
   margin: 0;
   margin-bottom: .5em;
+}
+
+@mixin button {
+  background-image: linear-gradient(to right,var(--limeGreen) 0%,  var(--brightCyan) 100%);
+  border: none;
+  border-radius: 1.5em;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1em;
+  outline: none;
+  padding: .9em 2.2em;
+}
+
+@mixin icon {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  background-repeat: no-repeat
+}
+
+.icon {
+  &-facebook {
+    @include icon;
+    background-image: url('../images/icon-facebook.svg');
+  }
+  &-youtube{
+    @include icon;
+    background-image: url('../images/icon-youtube.svg');
+  }
+  &-twitter {
+    @include icon;
+    background-image: url('../images/icon-twitter.svg');
+  }
+  &-pinterest {
+    @include icon;
+    background-image: url('../images/icon-pinterest.svg');
+  }
+  &-instagram {
+    @include icon;
+    background-image: url('../images/icon-instagram.svg');
+  }
 }
 
 @import 'header';

@@ -1,4 +1,62 @@
 .Menu {
-  width: 40px;
-  background: url('../images/icon-hamburger.svg') no-repeat center;
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  &-button {
+    width: 40px;
+    height: 40px;
+    background: url('../images/icon-hamburger.svg') no-repeat center;
+  }
+  a {
+    text-decoration: none;
+    color: var(--grayishBlue);
+    padding: 0 .8em;
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+  }
+  &-checkbox {
+    display: none;
+    &:checked {
+      & ~ .Menu-button {
+        background: url('../images/icon-close.svg') no-repeat center;
+      }
+      & ~ .Menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        padding: 1em;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        background-image: linear-gradient(to bottom, var(--darkBlue) 0%, transparent 90%);
+        .Menu-item {
+          &:first-of-type a {
+            padding-top: 2em;
+            border-radius: .5em .5em 0 0;
+          }
+          &:last-of-type a {
+            padding-bottom: 2em;
+            border-radius: 0 0 .5em .5em;
+          }
+        }
+        a {
+          background: var(--white);
+          color: var(--darkBlue);
+          padding: .8em 1em;
+          font-size: 1.1em;
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    &-button {
+      display: none;
+    }
+  }
 }

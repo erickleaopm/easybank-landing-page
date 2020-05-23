@@ -9,25 +9,42 @@
   <body>
     <header class="Header">
       <div class="Header-container">
-        <div class="Header-logo">
-          <img src="static/images/logo.svg" alt="Easybank" />
+        <div class="Header-content">
+          <img
+            class="Header-logo"
+            src="static/images/logo.svg"
+            alt="Easybank"
+          />
+          <input type="checkbox" id="menu" class="Menu-checkbox" />
+          <ul class="Menu">
+            <li class="Menu-item"><a href="#">Home</a></li>
+            <li class="Menu-item"><a href="#">About</a></li>
+            <li class="Menu-item"><a href="#">Contact</a></li>
+            <li class="Menu-item"><a href="#">Blog</a></li>
+            <li class="Menu-item"><a href="#">Carrers</a></li>
+          </ul>
+          <button class="Header-button">Request invite</button>
+          <label for="menu" class="Menu-button"></label>
         </div>
-        <nav class="Menu"></nav>
       </div>
     </header>
-    <section class="Hero is-hidden">
+    <section class="Hero">
       <div class="Hero-container">
-        <div class="Hero-image"></div>
-        <h1 class="Hero-title">Next generation digital banking</h1>
-        <p class="Hero-description">
-          Take your financial life online. Your Easybank account will be a
-          one-stop-shop for spending, saving, budgeting, investing, and much
-          more.
-        </p>
-        <button class="Hero-button">Request Invite</button>
+        <div class="Hero-content">
+          <div class="Hero-image"></div>
+          <div class="Hero-description">
+            <h1 class="Hero-title">Next generation digital banking</h1>
+            <p class="Hero-subtitle">
+              Take your financial life online. Your Easybank account will be a
+              one-stop-shop for spending, saving, budgeting, investing, and much
+              more.
+            </p>
+            <button class="Hero-button">Request Invite</button>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="Why is-hidden">
+    <section class="Why">
       <div class="Why-container">
         <h2 class="Why-title">Why choose Easybank?</h2>
         <p class="Why-description">
@@ -172,7 +189,12 @@
     </section>
     <footer class="Footer">
       <div class="Footer-container">
-        <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20">
+        <svg
+          class="Footer-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          width="139"
+          height="20"
+        >
           <defs>
             <linearGradient id="a" x1="72.195%" x2="17.503%" y1="0%" y2="100%">
               <stop offset="0%" stop-color="#33D35E" />
